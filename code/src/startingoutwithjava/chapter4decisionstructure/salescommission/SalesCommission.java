@@ -1,5 +1,4 @@
-package code.src.startingoutwithjava.chapter4decisionstructure.salesCommission;
-import javax.swing.text.html.HTMLDocument.RunElement;
+package code.src.startingoutwithjava.chapter4decisionstructure.salescommission;
 
 /**
  * Defining the SalesCommission class.

@@ -18,18 +18,18 @@ public class Sort {
         int index1 = 0, index2 = 0, totalIndex = 0, size;
 
         if (array1.length >= array2.length) {
-            size = array2.length; 
+            size = array2.length;
             while (flag) {
-                if (array1[index1] > array2[index2]) { 
-                    sorted[totalIndex] = array2[index2]; 
+                if (array1[index1] > array2[index2]) {
+                    sorted[totalIndex] = array2[index2];
                     totalIndex++;
                     index2++;
 
                     if (index2 == size) {
-                        a2 = true; 
-                        flag = false; 
+                        a2 = true;
+                        flag = false;
                     }
-                } else if (array1[index1] < array2[index2]) {  
+                } else if (array1[index1] < array2[index2]) {
                     sorted[totalIndex] = array1[index1];
                     totalIndex++;
                     index1++;
@@ -44,7 +44,7 @@ public class Sort {
 
                     if (index2 == size) {
                         a2 = true; // Signaling the end of array2.
-                        flag = false; //Signaling to end the loop.
+                        flag = false; // Signaling to end the loop.
                     }
                 }
             }
@@ -104,7 +104,7 @@ public class Sort {
             else
                 array2[i] = read.nextInt();
         }
-
+        read.close();
     }
 
     public int[] getArray1() {

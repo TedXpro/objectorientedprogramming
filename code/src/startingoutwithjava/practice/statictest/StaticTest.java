@@ -15,11 +15,11 @@ public class StaticTest {
         System.out.println("C = " + c);
     }
 
-    public StaticTest(int a, int b, int c) {
+    public StaticTest(int i, int j, int k) {
         System.out.println("In Constructor");
-        this.a = a;
-        this.b = b;
-        this.c = c;
+        a = i;
+        b = j;
+        c = k;
     }
 
     public int getA() {

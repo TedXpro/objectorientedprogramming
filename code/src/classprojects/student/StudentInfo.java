@@ -25,6 +25,6 @@ public class StudentInfo {
         System.out.println("Name: " + student1.getName());
         System.out.println("Age: " + student1.getAge());
         System.out.println("Id: " + student1.getId());
-
+        read.close();
     }
 }

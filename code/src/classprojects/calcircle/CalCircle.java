@@ -1,7 +1,6 @@
 package code.src.classprojects.calcircle;
 
 import java.util.Scanner;
-
 import code.src.classprojects.circle.Circle;
 
 public class CalCircle {
@@ -22,5 +21,6 @@ public class CalCircle {
             circle[i] = new Circle(radius);
             circle[i].display();
         }
+        read.close();
     }
 }

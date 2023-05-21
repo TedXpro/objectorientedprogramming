@@ -1,4 +1,4 @@
-package code.src.startingoutwithjava.chapter4decisionstructure.salesCommission;
+package code.src.startingoutwithjava.chapter4decisionstructure.salescommission;
 import java.util.Scanner;
 import java.text.DecimalFormat;
 
@@ -38,7 +38,7 @@ public class HalsCommission {
                 + dollar.format(payInfo.getAdvance()));
         System.out.println("Remaining pay: $"
                 + dollar.format(payInfo.getPay()));
-
+        read.close();
     }
 
 }

@@ -1,5 +1,4 @@
 package code.src.startingoutwithjava.chapter5loopsandfiles.triangledisplay;
-import javax.swing.text.Style;
 
 /**
  * Definition of a class that displays a triangle.

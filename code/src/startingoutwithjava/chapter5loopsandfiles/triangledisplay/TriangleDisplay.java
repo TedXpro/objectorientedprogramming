@@ -1,4 +1,5 @@
 package code.src.startingoutwithjava.chapter5loopsandfiles.triangledisplay;
+
 import java.util.Scanner;
 
 /**
@@ -25,7 +26,7 @@ public class TriangleDisplay {
             triangle.rightAngle();
         else
             triangle.leftAngle();
-
+        read.close();
     }
 
 }

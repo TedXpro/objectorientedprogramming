@@ -24,5 +24,6 @@ public class CellPhoneTest {
         System.out.println("Name: " + cell.getMake());
         System.out.println("Model: " + cell.getModel());
         System.out.println("Price: " + cell.getRetailPrice());
+        keyboard.close();
     }
 }

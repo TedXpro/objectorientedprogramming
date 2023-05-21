@@ -45,20 +45,33 @@ public class CountSentence {
     }
 
     /**
-     * This method counts the number of words in sentence.
+     * This method counts the number of words in sentence
+     * using memory space efficiently.
      */
     public void countWords() {
-        // String[] s = sentence.split(" ");
-        // words = s.length;
-
-        char space = ' ', ch;
-        String[] s;
+        int wordLenght = 0;
+        char ch, space = ' ';
         for (int i = 0; i < sentence.length(); i++) {
             ch = sentence.charAt(i);
-            if (ch == space)
-                words++;
+            if (ch == space) {
+                if (wordLenght != 0) {
+                    words++;
+                    wordLenght = 0;
+                }
+            } else
+                wordLenght++;
         }
-        words++;
+        if (wordLenght != 0)
+            words++;
+    }
+    
+    /**
+     * This method counts the number of words using the 
+     * split method of String.
+     */
+    public void countWordsSplit() {
+        String[] s = sentence.split(" ");
+        words = s.length;
     }
 
     /**

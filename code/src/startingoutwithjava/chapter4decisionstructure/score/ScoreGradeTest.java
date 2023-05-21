@@ -19,6 +19,6 @@ public class ScoreGradeTest{
 
         System.out.println("The LetterGrade of the score " 
                 + grade.getGrade() + " is " + grade.getLetterGrade());
-
+        read.close();
     }
 }

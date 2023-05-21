@@ -20,7 +20,7 @@ public class Test {
         name = read.nextLine();
         System.out.println("Enter the age: ");
         age = read.nextInt();
-
+        read.close();
         return new Test(name, age);
     }
 

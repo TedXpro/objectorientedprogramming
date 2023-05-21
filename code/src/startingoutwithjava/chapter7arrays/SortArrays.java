@@ -36,5 +36,6 @@ public class SortArrays {
 
         // Displaying the sorted array.
         s.display();
+        read.close();
     }
 }

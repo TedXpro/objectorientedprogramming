@@ -1,8 +1,6 @@
 package code.src.startingoutwithjava.chapter5loopsandfiles;
 import java.util.Scanner;
 
-import javax.print.attribute.standard.PrinterInfo;
-
 import java.io.*;
 
 public class ReadWriteData {

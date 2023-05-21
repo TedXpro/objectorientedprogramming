@@ -7,11 +7,11 @@ public class FinalExam extends GradedActivity {
     private double pointsEach;
     private int numMissed;
 
-    public FinalExam(int numQuestions, int numMissed) {
+    public FinalExam(int numQ, int numMissed) {
         double numericScore;
 
         this.numMissed = numMissed;
-        this.numQuestions = numQuestions;
+        this.numQuestions = numQ;
 
         pointsEach = 100.0 / numQuestions;
         numericScore = 100.0 - (numMissed * pointsEach);

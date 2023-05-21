@@ -1,4 +1,4 @@
-package code.src.startingoutwithjava.chapter4decisionstructure.payRoll;
+package code.src.startingoutwithjava.chapter4decisionstructure.payroll;
 /**
  * PayRoll class definition.
  * Calculates the payRoll of employees.

@@ -15,6 +15,8 @@ public class SquareDisplay {
 
         System.out.println("");
         square.display();
+
+        read.close();
     }
     
 }

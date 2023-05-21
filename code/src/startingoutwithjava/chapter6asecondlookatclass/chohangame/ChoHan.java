@@ -14,7 +14,7 @@ public class ChoHan {
         player1Name = read.nextLine();
         System.out.print("Enter the name of the second player: ");
         player2Name = read.nextLine();
-
+        read.close();
         Dealer dealer = new Dealer();
 
         Player player1 = new Player(player1Name);

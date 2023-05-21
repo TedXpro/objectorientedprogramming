@@ -21,6 +21,7 @@ public class LoShuMagic {
                 numbers[row][col] = read.nextInt();
             }
         }
+        read.close();
     }
 
     /**

@@ -36,7 +36,7 @@ public class AccountTest {
 
         System.out.println("The current interest rate is " + account.getInterest());
         System.out.println("Your current balance is: " + account.getBalance());
-
+        keyboard.close();
     }
 
 }

@@ -21,6 +21,7 @@ public class Student {
         studentId = read.nextLine();
         System.out.print("Enter the StudentAge: ");
         studentAge = read.nextInt();
+        read.close();
     }
 
     public void display() {

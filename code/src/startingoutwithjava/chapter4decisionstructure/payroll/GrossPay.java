@@ -1,4 +1,4 @@
-package code.src.startingoutwithjava.chapter4decisionstructure.payRoll;
+package code.src.startingoutwithjava.chapter4decisionstructure.payroll;
 import java.util.Scanner;
 
 /**
@@ -23,7 +23,7 @@ public class GrossPay {
         pay.setPayRate(rate);
 
         System.out.println("The Employees gross pay is " + pay.getGrossPay());
-
+        keyboard.close();
     }
 
 }
