@@ -1,0 +1,12 @@
+package code.src.classprojects.studentclass;
+/**
+ * This program uses the Student class.
+ */
+public class StudentInfoClass {
+    public static void main(String[] args) {
+        Student student1 = new Student();
+
+        student1.acceptInfo();
+        student1.display();
+    }    
+}
