@@ -3,8 +3,9 @@ package code.src.classprojects.shapes;
 import java.util.Scanner;
 
 public class Main {
+    static Scanner read = new Scanner(System.in);
+
     public static void main(String[] args) {
-        Scanner read = new Scanner(System.in);
 
         int choice;
         String ch;
@@ -22,6 +23,11 @@ public class Main {
             System.out.println("9. Rhombus");
             System.out.print("Enter your choice: ");
             choice = read.nextInt();
+
+            while (choice < 1 || choice > 9) {
+                System.out.println("Please enter your choice between 1-9: ");
+                choice = read.nextInt();
+            }
 
             Main m = new Main();
             if (choice == 1) {
@@ -229,21 +235,23 @@ public class Main {
         read.close();
     }
 
-    Scanner readm = new Scanner(System.in);
-
     /**
      * @return the choice between area and/or perimeter.
      */
     public int chooseCalculation() {
         int choice;
        
-
         System.out.println("What woud you like to calculate");
         System.out.println("1. Perimeter / Circumference");
         System.out.println("2. Area");
         System.out.println("3. Both");
         System.out.print("Enter your choice: ");
-        choice = readm.nextInt();
+        choice = read.nextInt();
+
+        while (choice < 1 || choice > 3) {
+            System.out.println("Please enter your choice between 1-3: ");
+            choice = read.nextInt();
+        }
 
         return choice;
     }
