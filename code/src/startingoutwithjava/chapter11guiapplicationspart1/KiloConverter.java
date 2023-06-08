@@ -59,8 +59,6 @@ public class KiloConverter extends JFrame {
             
             JOptionPane.showMessageDialog(null,
                     input + "Kilometers is " + miles + "miles");
-            if (actionCommand.equals("button1"))
-            JOptionPane.showMessageDialog(null,"You picked " + );
         }
         
     }
