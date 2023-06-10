@@ -2,7 +2,6 @@ package code.src.startingoutwithjava.chapter11guiapplicationspart1.brandisbagelh
 
 import java.awt.BorderLayout;
 import java.awt.event.*;
-
 import javax.swing.*;
 
 public class OrderCalculationsGui extends JFrame {
@@ -10,6 +9,7 @@ public class OrderCalculationsGui extends JFrame {
     private JButton calculate;
     private JButton exit;
 
+    private TextFieldDisplayPanel textField;
     private GreetingPanel greetPanel;
     private BagelPanel bagelPanel;
     private ToppingPanel toppingPanel;
@@ -31,6 +31,7 @@ public class OrderCalculationsGui extends JFrame {
         bagelPanel = new BagelPanel();
         toppingPanel = new ToppingPanel();
         coffeePanel = new CoffeePanel();
+        textField = new TextFieldDisplayPanel();
 
         buildPanel();
 
@@ -52,6 +53,7 @@ public class OrderCalculationsGui extends JFrame {
         exit.addActionListener(new ExitButtonListener());
 
         buttonPanel = new JPanel();
+        buttonPanel.add(textField);
         buttonPanel.add(calculate);
         buttonPanel.add(exit);
     }
@@ -69,10 +71,7 @@ public class OrderCalculationsGui extends JFrame {
 
                 total = subTotal + taxTotal;
 
-                JOptionPane.showMessageDialog(null, "Sub Total: $" + subTotal +
-                        "\nTax Total: $" + taxTotal +
-                        "\nTotal: $" + total);
-              
+                textField.updatefield(subTotal, total, taxTotal);
         }
     }
 
@@ -85,5 +84,4 @@ public class OrderCalculationsGui extends JFrame {
     public static void main(String[] args) {
         new OrderCalculationsGui();
     }
-
 }
