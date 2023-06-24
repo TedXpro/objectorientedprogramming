@@ -5,7 +5,7 @@ import java.sql.*;
 public class OpenDataBase {
     public static void main(String[] args) {
 
-        String password = "T#!nkP@dT15P";
+        String password = "111222333";
         String userName = "postgres";
 
         final String DB_URL = "jdbc:postgresql://localhost:5432/University";
