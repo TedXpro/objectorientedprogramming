@@ -12,7 +12,7 @@ public class ErtebBet extends JFrame {
     private Drinks drinks;
     private JPanel header;
     private JButton calculate;
-    private JButton exit;
+    private JButton clear;
     private JLabel subTotalLabel;
     private JLabel totalLabel;
     private JLabel taxLabel;
@@ -26,7 +26,7 @@ public class ErtebBet extends JFrame {
     public ErtebBet() {
         super("Price Calculate");
 
-        setSize(500, 500);
+        setSize(850, 500);
 
         setDefaultCloseOperation(EXIT_ON_CLOSE);
 
@@ -54,12 +54,12 @@ public class ErtebBet extends JFrame {
         calculate = new JButton("Calculate");
         calculate.addActionListener(new CalcButtonListener());
 
-        exit = new JButton("Exit");
-        exit.addActionListener(new ExitButton());
+        clear = new JButton("Clear");
+        clear.addActionListener(new ClearButton());
 
-        subTotalLabel = new JLabel("Sub Total:");
-        taxLabel = new JLabel("Taxed:");
-        totalLabel = new JLabel("Total:");
+        subTotalLabel = new JLabel("Sub Total:", SwingConstants.RIGHT);
+        taxLabel = new JLabel("Taxed:", SwingConstants.RIGHT);
+        totalLabel = new JLabel("Total:", SwingConstants.RIGHT);
 
         totalDisplay = new JTextField(10);
         totalDisplay.setEditable(false);
@@ -80,7 +80,7 @@ public class ErtebBet extends JFrame {
         buttons.add(totalLabel);
         buttons.add(totalDisplay);
         buttons.add(calculate);
-        buttons.add(exit);
+        buttons.add(clear);
     }
 
     private class CalcButtonListener implements ActionListener {
@@ -102,10 +102,15 @@ public class ErtebBet extends JFrame {
             totalDisplay.setText(String.valueOf(totalPrice));
         }
     }
-    
-    private class ExitButton implements ActionListener {
+
+    private class ClearButton implements ActionListener {
         public void actionPerformed(ActionEvent e) {
-            System.exit(0);
+            toppings.deselectAll();
+            foods.deselectAll();
+            drinks.deselectAll();
+            subTotalDisplay.setText("0.0");
+            taxDisplay.setText("0.0");
+            totalDisplay.setText("0.0");
         }
     }
 

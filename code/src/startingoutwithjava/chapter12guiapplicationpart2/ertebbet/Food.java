@@ -66,4 +66,15 @@ public class Food extends JPanel {
 
         return totalFoodPrice;
     }
+
+    public void deselectAll() {
+        if (ertebBedabo.isSelected())
+            ertebBedabo.doClick();
+        if (ertebBeinjera.isSelected())
+            ertebBeinjera.doClick();
+        if (shiro.isSelected())
+            shiro.doClick();
+        if (beyanet.isSelected())
+            beyanet.doClick();
+    }
 }

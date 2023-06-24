@@ -33,8 +33,8 @@ public class Drinks extends JPanel {
     private final double[] WATER_PRICES = { 15.0, 20.0, 25.0 };
     private final String[] HOT_DRINK_NAMES = { "Tea  $5.0", "Coffee $5.0", "Tea wiz Lemmon 10.0", "Decaf 10.0" };
     private final double[] HOT_DRINK_PRICES = { 5.0, 5.0, 10.0, 10.0 };
-    private final String[] SMOTHIE_NAMES = { "Avocado  $55.0", "Mango  $55.0", "Mixed  $60.0" };
-    private final double[] SMOTHIE_PRICES = { 55.0, 55.0, 60.0 };
+    private final String[] SMOTHIE_NAMES = { "None", "Avocado  $55.0", "Mango  $55.0", "Mixed  $60.0" };
+    private final double[] SMOTHIE_PRICES = { 0.0, 55.0, 55.0, 60.0 };
 
     public Drinks() {
         cola = new JCheckBox("Coke");
@@ -110,5 +110,14 @@ public class Drinks extends JPanel {
             totalDrinkPrice += sp;
 
         return totalDrinkPrice;
+    }
+
+    public void deselectAll() {
+        if (cola.isSelected())
+            cola.doClick();
+        if (mirinda.isSelected())
+            mirinda.doClick();
+        if (sprite.isSelected())
+            sprite.doClick();
     }
 }

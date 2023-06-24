@@ -61,8 +61,19 @@ public class Toppings extends JPanel {
             totalToppingPrice += ketPrice;
         if (mayo.isSelected())
             totalToppingPrice += mayoPrice;
-    
+
         return totalToppingPrice;
+    }
+
+    public void deselectAll() {
+        if (avocado.isSelected())
+            avocado.doClick();
+        if (egg.isSelected())
+            egg.doClick();
+        if (ketchup.isSelected())
+            ketchup.doClick();
+        if (mayo.isSelected())
+            mayo.doClick();
     }
 
 }
